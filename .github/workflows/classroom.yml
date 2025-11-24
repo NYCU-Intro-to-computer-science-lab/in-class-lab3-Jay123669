@@ -34,19 +34,19 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y g++
 
-      # Problem 1: Calculator
-      - name: Test p1 - Calculator
+      # Problem 1: 高塔建築師 (The Tower Architect)
+      - name: Test p1 - The Tower Architect
         id: test-p1
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: p1-calculator
+          test-name: p1-tower-architect
           setup-command: ''
           command: python3 run_tests.py p1 && cat build/p1.score | awk '{print $1"/"$2}'
           timeout: 10
-          max-score: 100
+          max-score: 20
 
-      # Problem 2: Recursion Sum
-      - name: Test p2 - Recursion Sum
+      # Problem 2: 完美鋪磚計畫 (The Perfect Tiling Project)
+      - name: Test p2 - The Perfect Tiling Project
         id: test-p2
         uses: classroom-resources/autograding-command-grader@v1
         with:
@@ -54,29 +54,40 @@ jobs:
           setup-command: ''
           command: python3 run_tests.py p2 && cat build/p2.score | awk '{print $1"/"$2}'
           timeout: 10
-          max-score: 100
+          max-score: 20 
 
-      # Problem 3: Climbing Stairs
-      - name: Test p3 - Climbing Stairs
+      # Problem 3: 破解數學家的謎題 (Cracking the Mathematician's Puzzle)
+      - name: Test p3 - Cracking the Mathematician's Puzzle
         id: test-p3
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: p3-climbing-stairs
+          test-name: p3-cracking-the-mathematician's-puzzle
           setup-command: ''
           command: python3 run_tests.py p3 && cat build/p3.score | awk '{print $1"/"$2}'
           timeout: 10
-          max-score: 100
+          max-score: 30
 
-      # Problem 4: McCarthy 91
-      - name: Test p4 - McCarthy 91
+      # Problem 4: 遞迴的足跡 (Footsteps of Recursion)
+      - name: Test p4 - Footsteps of Recursion
         id: test-p4
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: p4-mccarthy-91
+          test-name: p4-footsteps-of-recursion
           setup-command: ''
           command: python3 run_tests.py p4 && cat build/p4.score | awk '{print $1"/"$2}'
           timeout: 10
-          max-score: 100
+          max-score: 30
+
+      # Problem 5: 受詛咒的直線 (The Cursed Line)
+      - name: Test p5 - The Cursed Line - Bonus
+        id: test-p5
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: p5-the-cursed-line
+          setup-command: ''
+          command: python3 run_tests.py p5 && cat build/p5.score | awk '{print $1"/"$2}'
+          timeout: 10
+          max-score: 20
 
       # Report results to GitHub Classroom
       - name: Autograding Reporter
@@ -86,5 +97,6 @@ jobs:
           TEST-P2_RESULTS: "${{steps.test-p2.outputs.result}}"
           TEST-P3_RESULTS: "${{steps.test-p3.outputs.result}}"
           TEST-P4_RESULTS: "${{steps.test-p4.outputs.result}}"
+          TEST-P5_RESULTS: "${{steps.test-p5.outputs.result}}"
         with:
-          runners: test-p1,test-p2,test-p3,test-p4
+          runners: test-p1,test-p2,test-p3,test-p4,test-p5
