@@ -1,20 +1,19 @@
-// p3: count whitespace-separated words from stdin
+// 題目 3：破解數學家的謎題 (Cracking the Mathematician's Puzzle) - 30分
+// 限制：不可使用陣列或 vector 製作質數篩表
+// 必須實作：isPrime
+
 #include <iostream>
-#include <string>
 using namespace std;
-int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    long long cnt=0; 
-    string w;
-    while(true){
-        cout << "errr";
-    }
-    while (cin >> w) {
-        cnt++;
-    }
+
+bool isPrime(int n) {
     
-    cout<<cnt<<"\n";
+}
+
+int main() {
+    int n;
+    cin >> n;
+    
+    
     
     return 0;
 }

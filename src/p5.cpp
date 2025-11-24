@@ -1,20 +1,20 @@
-// p5: factorial using loop (WRONG - uses forbidden keywords)
+// 題目 5：受詛咒的直線 (The Cursed Line) - Bonus +20分
+// 限制：禁止使用任何迴圈 (for, while, do-while, goto)
+//       禁止直接將圓盤從 1 移動到 3（或 3 到 1）
+// 必須實作：hanoi
+
 #include <iostream>
 using namespace std;
 
-long long factorial(int n) {
-    long long result = 1;
-    // Using for loop - this is forbidden!
-    for (int i = 1; i <= n; i++) {
-        result *= i;
-    }
-    return result;
+void hanoi(int n, int from, int to, int aux) {
+    
 }
 
 int main() {
     int n;
-    if (cin >> n) {
-        cout << factorial(n) << endl;
-    }
+    cin >> n;
+    
+    
+    
     return 0;
 }

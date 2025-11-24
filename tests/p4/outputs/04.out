@@ -1,1 +1,3 @@
-test case four
+SEARCH fib(2)
+GET fib(2) = 1
+1

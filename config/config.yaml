@@ -4,28 +4,48 @@ app:
 compiler_path: "g++"
 problems:
   p1:
-    name: Sum Sum
-    points: 25
+    name: 高塔建築師 (The Tower Architect)
+    points: 20
     timeout: 1
+    forbidden:
+    - for
+    - while
+    - do
+    - goto
+    required:
+    - factorial
+    - sum
   p2:
-    name: Array Operations
-    points: 25
+    name: 完美鋪磚計畫 (The Perfect Tiling Project)
+    points: 20
     timeout: 1
-    cases:
-      '01': 10
-      '02': 10
-      '03': 5
+    forbidden:
+    - for
+    - while
+    - do
+    - goto
+    required:
+    - gcd
   p3:
-    name: String Manipulation
-    points: 25
+    name: 破解數學家的謎題 (Cracking the Mathematician's Puzzle)
+    points: 30
     timeout: 1
+    required:
+    - isPrime
   p4:
-    name: Basic I/O
-    points: 25
+    name: 遞迴的足跡 (Footsteps of Recursion) 
+    points: 30
     timeout: 1
+    forbidden:
+    - for
+    - while
+    - do
+    - goto
+    required:
+    - fib
   p5:
-    name: Factorial (Recursion)
-    points: 25
+    name: 受詛咒的直線 (The Cursed Line) - Bonus
+    points: 20
     timeout: 1
     forbidden:
     - for
@@ -33,17 +53,7 @@ problems:
     - do
     - goto
     required:
-    - factorial
-  p6:
-    name: Factorial Challenge
-    points: 25
-    timeout: 1
-    forbidden:
-    - for
-    - while
-    - do
-    - goto
-    required:
-    - factorial
+    - hanoi
+
 defaults:
   timeout: 1

@@ -1,11 +1,23 @@
-// p1: sum all integers from stdin, output the sum
+// 題目 1：高塔建築師 (The Tower Architect) - 20分
+// 限制：禁止使用任何迴圈 (for, while, do-while, goto)
+// 必須實作：factorial, sum
+
 #include <iostream>
 using namespace std;
-int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    long long x, sum=0;
-    while(cin>>x) sum+=x;
-    cout<<sum<<"\n";
+
+long long factorial(int n) {
+    
+}
+
+long long sum(int n) {
+    
+}
+
+int main() {
+    int n;
+    cin >> n;
+    
+    
+    
     return 0;
 }

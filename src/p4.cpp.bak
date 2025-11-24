@@ -1,4 +1,5 @@
 // 題目 4：遞迴的足跡 (Footsteps of Recursion) - 30分
+// 限制：禁止使用任何迴圈 (for, while, do-while, goto)
 // 必須實作：fib
 
 #include <iostream>
