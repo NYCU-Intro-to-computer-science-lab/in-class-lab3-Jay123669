@@ -1,5 +1,3 @@
-// 題目 2：完美鋪磚計畫 (The Perfect Tiling Project) - 20分
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -12,4 +10,5 @@ int main(){
     int x, y; 
     cin >> x >> y;
     cout << gcd(x, y) << "\n";
+    return 0;
 }
